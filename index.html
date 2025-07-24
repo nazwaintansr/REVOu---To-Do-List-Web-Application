@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>To-Do List</h1>
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Tambah tugas...">
+            <input type="date" id="dueDateInput">
+            <button id="addTaskBtn" title="Tambah Tugas">&#x271A;</button>
+        </div> <div class="controls-section">
+            <button id="filterAllBtn" class="active">Semua</button>
+            <button id="filterActiveBtn">Aktif</button>
+            <button id="filterCompletedBtn">Selesai</button>
+            <button id="clearCompletedBtn">Hapus Selesai</button>
+            <button id="deleteAllBtn">Hapus Semua</button>
+        </div>
+
+        <ul id="taskList">
+            </ul>
+        <p id="noTaskMessage" style="text-align: center; color: var(--text-muted); font-style: italic; margin-top: 20px;">Tidak ada tugas ditemukan.</p>
+        </div> <script src="js/script.js"></script>
+</body>
+</html>
